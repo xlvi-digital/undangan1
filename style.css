@@ -1,0 +1,288 @@
+/* My FONTS */
+@font-face {
+  font-family: analogue;
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/Analogue.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: power;
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/power.woff2") format("woff2");
+  font-display: swap;
+}
+/* Start Custom Fonts CSS */
+
+/* MY CSS VARIABLE */
+:root {
+  /* --explora: "Explora", cursive; */
+  --poppins: "Poppins", sans-serif;
+
+  /* COLORS */
+  --main-bg: #bbb1a7;
+
+  --main-color: #7d685e;
+  --text-color: #725b50;
+  --shadow: 0 2px 2px rgba(0 0 0 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: var(--poppins);
+}
+
+/* popup */
+.popup {
+  display: none; /* Mulai dengan mengatur popup menjadi tersembunyi */
+  /* align-items: center; */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  background-image: url(assets/img/popup.JPG);
+  background-size: cover;
+  background-position: center; /* Latar belakang transparan */
+  min-height: 100vh;
+  transition: transform 4s ease, opacity 4s ease;
+}
+.popup .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  padding: 5rem; /* Opsional: Sesuaikan padding sesuai kebutuhan */
+  overflow: hidden;
+  color: #fff;
+  /* padding: 4rem; */
+}
+
+.popup .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.popup .content .title-bride {
+  text-align: center;
+}
+
+.popup .content .dear {
+  text-align: center;
+}
+
+.popup .content h1,
+.popup .content h4,
+.popup .content p {
+  text-shadow: var(--shadow);
+}
+.popup .content p {
+  /* font-size: rem; */
+  margin-bottom: 1rem;
+}
+.popup .content h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0.7rem;
+}
+
+.popup .content h1 {
+  font-family: "analogue";
+  font-size: 3.2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.button {
+  padding: 0.5rem 2rem;
+  background-color: var(--text-color);
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 18px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-bride {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img-bride::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(1, 1, 1, 0), rgba(1, 1, 1, 0.2));
+  position: absolute;
+  bottom: 0;
+}
+
+.bride-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 3/2;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.bride-image.active {
+  opacity: 1;
+}
+#wave {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 120px;
+  left: 0;
+  z-index: 0;
+}
+#wave2 {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 115px;
+  left: 0;
+  z-index: 0;
+}
+
+.content-bride {
+  background: url("assets/img/bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  padding: 0.7rem 5%;
+}
+
+.content-bride h4,
+.content-bride h1,
+.content-bride p,
+.content-bride .button {
+  z-index: 1;
+}
+
+.content-bride h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--text-color);
+}
+
+.content-bride h1 {
+  font-size: 3.2rem;
+  font-family: "analogue";
+  font-weight: normal;
+  letter-spacing: 1;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.content-bride p {
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+  color: var(--text-color);
+}
+
+/* Coundown */
+
+.coundown {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+.coundown .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #bbb1a7;
+  padding: 2rem 0;
+}
+
+.coundown img {
+  width: 120px;
+}
+
+.coundown h2 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-family: "analogue";
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.coundown .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coundown .time .waktu {
+  margin: 2rem;
+  color: #fff;
+  font-family: "Poppins", Sans-serif;
+  font-weight: normal;
+}
+
+.waktu h5 {
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: "Port Lligat Sans", sans-serif;
+}
+.waktu p {
+  font-size: 1.2rem;
+}
