@@ -9,23 +9,15 @@
   html {
     font-size: 65%;
   }
-}
-
-/* Mobile Phone */
-@media (max-width: 450px) {
-  html {
-    font-size: 55%;
-  }
-
   .popup .container {
     padding: 7rem;
   }
 
   #wave {
-    bottom: 180px;
+    bottom: 200px;
   }
   #wave2 {
-    bottom: 168px;
+    bottom: 190px;
   }
   .content-bride {
     padding: 4rem 5%;
@@ -34,18 +26,26 @@
     justify-content: start;
   }
   .content-bride h4 {
-    padding: 0.6rem 0;
+    padding: 0.7rem 0;
     font-size: 1.5rem;
   }
   .content-bride h1 {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
   }
   .content-bride p,
   .content-bride .button {
     font-size: 1.2rem;
+    margin: 0.6rem 0;
   }
 
   .coundown img {
     width: 75px;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
   }
 }
