@@ -10,23 +10,23 @@
     font-size: 65%;
   }
   .popup .container {
-    padding: 7rem;
+    padding: 10rem 0;
   }
 
   #wave {
-    bottom: 200px;
+    bottom: 240px;
   }
   #wave2 {
-    bottom: 190px;
+    bottom: 230px;
   }
   .content-bride {
-    padding: 4rem 5%;
+    padding: 6rem 5%;
     text-align: start;
     align-items: start;
     justify-content: start;
   }
   .content-bride h4 {
-    padding: 0.7rem 0;
+    padding: 0.8rem 0;
     font-size: 1.5rem;
   }
   .content-bride h1 {
@@ -35,7 +35,7 @@
   .content-bride p,
   .content-bride .button {
     font-size: 1.2rem;
-    margin: 0.6rem 0;
+    margin: 0.7rem 0;
   }
 
   .coundown img {
