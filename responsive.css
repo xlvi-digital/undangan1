@@ -18,6 +18,10 @@
     padding: 10rem 0;
   }
 
+  .hero .img-bride .cover {
+    aspect-ratio: 3/3;
+  }
+
   #wave {
     bottom: 245px;
   }
