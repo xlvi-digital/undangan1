@@ -9,6 +9,11 @@
   html {
     font-size: 67%;
   }
+
+  .popup {
+    /* height: auto; */
+    background-size: auto;
+  }
   .popup .container {
     padding: 10rem 0;
   }
@@ -17,7 +22,7 @@
     bottom: 245px;
   }
   #wave2 {
-    bottom: 240px;
+    bottom: 238px;
   }
   .content-bride {
     padding: 2rem 5% 8.5rem;
@@ -36,6 +41,11 @@
   .content-bride .button {
     font-size: 1.2rem;
     margin: 1rem 0;
+  }
+
+  /* coundown */
+  .coundown {
+    padding: 0;
   }
 
   .coundown img {
