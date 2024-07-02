@@ -67,10 +67,11 @@
     text-align: center;
     flex: 0 0 100%;
     max-width: 100%;
+    padding: 0;
   }
   .row.couple .col-4 {
     order: -1; /* Mengubah urutan elemen sehingga gambar muncul di atas */
-    margin-bottom: 20px; /* Menambahkan jarak antara gambar dan teks di bawahnya */
+    margin-bottom: 20px;
   }
 
   .home .couple .col-lg-6 {
@@ -89,7 +90,7 @@
 
   .heart {
     box-shadow: 0;
-    transform: translateX(-50%) translateY(-50px);
+    transform: translateX(-50%) translateY(-40px);
     margin: 2rem auto;
   }
   .heart i {
