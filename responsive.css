@@ -66,6 +66,18 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .col-lg-6 {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+
+  .home .invit {
+    font-size: 1.3rem;
+  }
+  .home p {
+    font-size: 1.6rem;
+  }
+
   .home .couple .col-4,
   .home .couple .col-8 {
     text-align: center;
@@ -74,22 +86,25 @@
     padding: 0;
   }
 
+  .home .couple img {
+    width: 70%;
+  }
+
   .home .couple h3 {
     font-size: 2.6rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
   .row.couple .col-4 {
     order: -1; /* Mengubah urutan elemen sehingga gambar muncul di atas */
     margin-bottom: 20px;
   }
 
-  .home .couple .col-lg-6 {
-    margin-bottom: 10rem;
-  }
-
   .text-end {
     text-align: center;
+    align-items: center;
   }
+
   .instagram {
     width: 40px;
     height: 40px;
@@ -101,9 +116,11 @@
 
   .heart {
     background: transparent !important;
+    position: static;
+    /* left: 0; */
     /* box-shadow: 0; */
-    transform: translateX(-50%) translateY(-40px);
-    margin: 2rem auto;
+    transform: none;
+    margin: 2rem auto 3rem;
   }
   .heart i {
     font-size: 4rem;
