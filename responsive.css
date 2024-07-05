@@ -62,12 +62,21 @@
     margin-top: 20px;
   }
 
+  .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
   .home .couple .col-4,
   .home .couple .col-8 {
     text-align: center;
     flex: 0 0 100%;
     max-width: 100%;
     padding: 0;
+  }
+
+  .home .couple h3 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
   }
   .row.couple .col-4 {
     order: -1; /* Mengubah urutan elemen sehingga gambar muncul di atas */
@@ -82,14 +91,17 @@
     text-align: center;
   }
   .instagram {
-    margin: 10px auto 0; /* Tengah di mobile dengan margin otomatis */
+    width: 40px;
+    height: 40px;
+    margin: 2rem auto; /* Tengah di mobile dengan margin otomatis */
   }
   .instagram i {
     font-size: 2rem;
   }
 
   .heart {
-    box-shadow: 0;
+    background: transparent !important;
+    /* box-shadow: 0; */
     transform: translateX(-50%) translateY(-40px);
     margin: 2rem auto;
   }
