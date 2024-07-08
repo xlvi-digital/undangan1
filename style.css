@@ -173,6 +173,7 @@ body {
 .bride-image.active {
   opacity: 1;
 }
+
 #wave {
   position: absolute;
   width: 100%;

@@ -91,7 +91,7 @@
   }
 
   .home .couple h3 {
-    font-size: 2.6rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     text-align: center;
   }
@@ -119,8 +119,9 @@
     position: static;
     /* left: 0; */
     /* box-shadow: 0; */
+    box-shadow: 0 0 0 0;
     transform: none;
-    margin: 2rem auto 3rem;
+    margin: 2.8rem auto 4rem;
   }
   .heart i {
     font-size: 4rem;

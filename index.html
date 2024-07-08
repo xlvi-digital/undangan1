@@ -28,13 +28,13 @@
       <!-- Lightbox -->
       <!-- <link rel="stylesheet" href="css/lightbox.css" /> -->
       <title>The Wedding Of : Utsman & Yani Mulyani</title>
-      <link rel="shortcut icon" href="images/logo.png" />
+      <!-- <link rel="shortcut icon" href="images/logo.png" /> -->
       <!-- toastr -->
-      <link rel="stylesheet" href="assets/toastr/toastr.min.css" />
+      <!-- <link rel="stylesheet" href="assets/toastr/toastr.min.css" /> -->
       <!-- sweaatalert -->
-      <link rel="stylesheet" href="assets/sweetalert2/sweetalert2.min.css" />
+      <!-- <link rel="stylesheet" href="assets/sweetalert2/sweetalert2.min.css" /> -->
       <!-- Aos -->
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     </head>
   </head>
   <body>
@@ -56,9 +56,9 @@
     </section>
 
     <section id="hero" class="hero">
-      <div class="img-bride">
-        <!-- <img src="assets/img/gallery/1.jpg" alt="Bride and Groom" class="bride-image cover" /> -->
+      <div class="img-bride" id="img-bride">
         <img src="assets/img/gallery/3.jpg" alt="Bride and Groom" class="bride-image" />
+        <!-- <img src="assets/img/gallery/2.jpg" alt="Bride and Groom" class="bride-image" /> -->
         <!-- <img src="assets/img/gallery/4.jpg" alt="Bride and Groom" class="bride-image" /> -->
       </div>
       <svg id="wave" style="transform: rotate(0deg); transition: 0.3s" viewBox="0 0 1440 130" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -94,7 +94,7 @@
         <button type="button" class="button">save the date</button>
       </div>
     </section>
-
+    <!-- coundown -->
     <section id="coundown" class="coundown">
       <div class="container">
         <img src="assets/img/bunga.png" alt="bunga" />
@@ -119,7 +119,7 @@
         </div>
       </div>
     </section>
-
+    <!-- Home -->
     <section id="home" class="home">
       <div class="container">
         <div class="row justify-content-center">
@@ -158,7 +158,19 @@
         </div>
       </div>
     </section>
-    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
     <script src="script.js"></script>
+    <script src="assets/Snowfall/snowfall.min.js"></script>
+
+    <script>
+      snowFall.snow(document.getElementById("hero"), {
+        round: true,
+        minSize: 1,
+        maxSize: 10,
+        shadow: true,
+        flakeCount: 50,
+        flakeColor: "#fff",
+        maxSpeed: 2,
+      });
+    </script>
   </body>
 </html>
