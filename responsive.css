@@ -126,6 +126,13 @@
   .heart i {
     font-size: 4rem;
   }
+
+  .tgl-acara h5 {
+    padding: 0 1.5rem;
+  }
+  .tgl-acara .tgl-akad {
+    padding: 0;
+  }
 }
 
 /* Mobile Phone */
