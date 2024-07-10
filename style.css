@@ -448,7 +448,7 @@ body {
 .container-wedding {
   position: relative; /* Ensure this content is positioned relative to the fixed image */
   z-index: 1; /* Ensure this content is above the hero image */
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 25%, rgba(255, 255, 255, 0.2));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0.2));
   padding-top: 100vh; /* Ensure content starts after the hero image */
 }
 
@@ -525,7 +525,7 @@ body {
   flex-direction: column;
   border-left: 1px solid #010100;
   border-right: 1px solid #010100;
-  padding: 0 3rem;
+  padding: 1rem 3rem;
 }
 
 .tgl-acara h5 {
@@ -582,10 +582,15 @@ body {
 }
 
 .line {
-  width: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line span {
+  width: 75%;
   height: auto;
   padding: 3rem 0;
   border-top: 1px solid #010100;
-  text-align: center;
-  display: flex;
 }
