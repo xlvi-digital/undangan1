@@ -476,6 +476,7 @@ body {
   font-size: 1.2rem;
   max-width: 75%;
   margin: 0.8rem 0;
+  text-shadow: var(--shadow);
 }
 
 .wedding h5 {
@@ -529,7 +530,7 @@ body {
 }
 
 .tgl-acara h5 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   padding: 0 1rem;
 }
 
@@ -542,7 +543,7 @@ body {
 }
 
 .tgl-akad h5 {
-  font-size: 5rem;
+  font-size: 5.2rem;
   color: #ab755c;
   font-weight: 600;
   font-family: "analogue" serif;
@@ -593,4 +594,42 @@ body {
   height: auto;
   padding: 3rem 0;
   border-top: 1px solid #010100;
+}
+
+/* Gallery */
+.gallery {
+  background: #bbb1a7;
+  padding: 5rem 7%;
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+
+.gallery h2 {
+  font-size: 3rem;
+  font-family: "analugue";
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+.gallery .container-gallery .img-gallery {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery .container-gallery .img-gallery img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 2/3;
+  border-radius: 20px;
+  border: 0.2px transparent var(--dark-75);
+  /* transform: scale(1.1); */
+}
+.gallery .container-gallery .img-gallery img:hover {
+  filter: brightness(35%);
 }

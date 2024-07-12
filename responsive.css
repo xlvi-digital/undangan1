@@ -133,6 +133,10 @@
   .tgl-acara .tgl-akad {
     padding: 1rem 0;
   }
+
+  .gallery .container-gallery .img-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Mobile Phone */
