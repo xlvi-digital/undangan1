@@ -130,8 +130,13 @@
   .tgl-acara h5 {
     padding: 0 1.5rem;
   }
-  .tgl-acara .tgl-akad {
-    padding: 1rem 0;
+
+  .doa img {
+    width: 75px;
+  }
+
+  .doa p {
+    max-width: 90%;
   }
 
   .gallery .container-gallery .img-gallery {
