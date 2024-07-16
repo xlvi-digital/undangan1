@@ -117,7 +117,7 @@ body {
 
 .button {
   /* font-family: "Verdana", Sans-serif; */
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: normal;
   fill: #ffffff;
   color: #ffffff;
@@ -485,7 +485,7 @@ body {
 
 .img-story {
   width: 100%;
-  height: auto;
+  height: 70vh;
   position: relative;
 }
 
@@ -504,8 +504,8 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
-  object-position: center;
-  /* aspect-ratio: 3/2; */
+  object-position: top;
+  aspect-ratio: 3/2;
 }
 
 .first-story,
@@ -721,4 +721,59 @@ body {
 }
 .gallery .container-gallery .img-gallery img:hover {
   filter: brightness(35%);
+}
+
+/* Gift */
+
+.gift {
+  padding: 5rem 7%;
+  background: #dbd3ce;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-gift {
+  padding: 2rem 4%;
+  border-radius: 20px;
+  background-color: #ece6e3;
+}
+
+.img-gift {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+.img-gift img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  object-position: center;
+  /* aspect-ratio: 3/2; */
+}
+
+.content-gift {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.4rem 3rem;
+  color: var(--text-color);
+}
+
+.content-gift h2 {
+  font-family: analogue;
+  font-size: 3rem;
+  font-weight: normal;
+
+  margin-bottom: 1rem;
+}
+
+.content-gift p {
+  text-align: center;
+  margin-bottom: 1rem;
 }
