@@ -30,7 +30,7 @@
     bottom: 238px;
   }
   .content-bride {
-    padding: 2rem 5% 8.5rem;
+    padding: 2rem 5% 8rem;
     text-align: start;
     align-items: start;
     justify-content: center;
@@ -139,6 +139,10 @@
     max-width: 90%;
   }
 
+  .img-story {
+    height: 50vh;
+  }
+
   .gallery .container-gallery .img-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -153,6 +157,14 @@
 
   .row-2 {
     flex-direction: column;
+  }
+
+  .wisher .img-wisher {
+    height: 60vh;
+  }
+
+  .content-wisher {
+    margin-top: -4.5rem;
   }
 }
 

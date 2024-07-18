@@ -485,7 +485,7 @@ body {
 
 .img-story {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   position: relative;
 }
 
@@ -504,8 +504,8 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
-  object-position: top;
-  aspect-ratio: 3/2;
+  object-position: center;
+  /* aspect-ratio: 3/2; */
 }
 
 .first-story,
@@ -753,7 +753,7 @@ body {
   object-fit: cover;
   border-radius: 20px 20px 0 0;
   object-position: center;
-  /* aspect-ratio: 3/2; */
+  aspect-ratio: 3/2;
 }
 
 .content-gift {
@@ -911,4 +911,139 @@ body {
 
 .hadiah p {
   font-size: 1.2rem;
+}
+
+/* Wisher */
+
+.wisher {
+  position: relative;
+}
+.wisher .img-wisher {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.img-wisher::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #e0dfdf00 33%, #ece6e3 90%);
+}
+
+.wisher .img-wisher img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.content-wisher {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 0 7% 2rem;
+  flex-direction: column;
+  background-color: #ece6e3;
+}
+
+.content-wisher h2 {
+  font-size: 4rem;
+  font-family: "analogue";
+  color: var(--text-color);
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-top: -4rem;
+  z-index: 1;
+}
+
+.content-wisher p {
+  margin-top: 0.5rem;
+  color: var(--text-color);
+  z-index: 1;
+}
+
+.content-wisher form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 18px 15px 15px;
+}
+.content-wisher form input {
+  text-indent: 0;
+  width: 100%;
+  padding-left: 15px;
+  border-radius: 2px;
+  height: 2.5em;
+  border-bottom: 1px solid #bbb1a7 !important;
+  border: 0px;
+  border-radius: 2px;
+  height: 3em !important;
+  margin-bottom: 5px;
+  font-family: inherit;
+  font-size: 1em !important;
+}
+
+.content-wisher form textarea {
+  border: 1px solid #d5deea;
+  border-width: 1px !important;
+  width: 100%;
+  min-height: 5em !important;
+  margin: 1rem 0 !important;
+  padding: 4px 6px;
+  box-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: height 0.2s;
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  font-family: inherit;
+  font-size: 1em !important;
+  line-height: 19px;
+  resize: vertical !important;
+  background: #fff;
+  color: #44525f;
+  vertical-align: top;
+  padding-left: 15px;
+  border-radius: 8px;
+}
+
+.content-wisher form select {
+  border-bottom: 1px solid #bbb1a7 !important;
+  border: 0px;
+  border-radius: 2px;
+  height: 3em !important;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1em !important;
+  resize: vertical !important;
+  background: #fff;
+  color: #44525f;
+  border-width: 1px !important;
+  margin-bottom: 1rem;
+  padding-left: 15px;
+}
+
+.kirim {
+  font-family: poppin;
+  color: #fff;
+  background: #71451d;
+  border: 1px solid;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  font-size: 13px !important;
+  position: relative;
+  display: inline-block;
+  height: 2em;
+  width: auto;
+  margin: 0 2px;
+  padding: 5px 25px;
 }
